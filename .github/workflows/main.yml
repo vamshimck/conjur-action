@@ -30,7 +30,7 @@ jobs:
     steps:
             # ...
       - name: Import Secrets using CyberArk Conjur Secret Fetcher
-        uses: cyberark/conjur-action@v2.0.2
+        uses: vamshimck/conjur-action@v2.0.2
         with:
           url: https://mckesson.secretsmgr.cyberark.cloud
           account: conjur
