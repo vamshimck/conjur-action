@@ -7,14 +7,9 @@
         - !host
           id: release
           annotations:
-              authn-jwt/github/repository: infamousjoeg/conjur-action
+              authn-jwt/github/repository: vamshimck/conjur-action
               authn-jwt/github/workflow: release
 
       - !grant
         role: !group
         members: *hosts
-
-- !grant
-  role: !group conjur/authn-jwt/github/apps
-  member: !group github-apps
-
